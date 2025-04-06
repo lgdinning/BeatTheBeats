@@ -25,6 +25,7 @@ public class DrumScript : MonoBehaviour
             Debug.Log("E pressed! Total count: " + drumHitCount);
             if (drumHitCount >= clearHitCount)
             {
+                GameManager.game.LoadNext();
                 Debug.Log("LIMMIT REACHED!!! " + drumHitCount);
             }
         }

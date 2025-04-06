@@ -35,6 +35,7 @@ public class ScoreManager : MonoBehaviour
         }
         else if (halfSpins < totalSpins / 2) {
             eggObject.GetComponent<SpriteRenderer>().sprite = egg2;
+            GameManager.game.LoadNext();
         }
     }
 }

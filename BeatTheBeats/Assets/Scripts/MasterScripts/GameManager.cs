@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,8 +22,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void LoadNext() {
-
+    public void LoadNext() {
+        int randomChoice = Random.Range(0,sceneList.Count);
+        SceneManager.LoadScene(sceneList[randomChoice]);
     }
 
     // Update is called once per frame
