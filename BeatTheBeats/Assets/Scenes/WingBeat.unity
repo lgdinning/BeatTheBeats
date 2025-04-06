@@ -221,6 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 777747423}
   - component: {fileID: 777747424}
+  - component: {fileID: 777747425}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -298,6 +299,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &777747425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777747422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf8d6c440193dfa45b9d140789beb0c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wingSprites:
+  - {fileID: 21300000, guid: 86f312f09e9362e4eab570fad491825a, type: 3}
+  - {fileID: 21300000, guid: 8489d72e6edeee645bb54e4a60003f1b, type: 3}
+  - {fileID: 21300000, guid: d01b7418cf40505419c99ea089d5c9ac, type: 3}
+  - {fileID: 21300000, guid: c570b1129ecc6dc4eb8a11c48131335c, type: 3}
+  - {fileID: 21300000, guid: d01b7418cf40505419c99ea089d5c9ac, type: 3}
+  - {fileID: 21300000, guid: 8489d72e6edeee645bb54e4a60003f1b, type: 3}
 --- !u!1 &1035373805
 GameObject:
   m_ObjectHideFlags: 0
