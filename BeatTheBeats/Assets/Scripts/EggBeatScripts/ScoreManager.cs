@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -32,10 +33,15 @@ public class ScoreManager : MonoBehaviour
         Debug.Log(halfSpins);
         if (halfSpins < 0) {
             eggObject.GetComponent<SpriteRenderer>().sprite = egg3;
+            StartCoroutine(WinWait());
         }
         else if (halfSpins < totalSpins / 2) {
             eggObject.GetComponent<SpriteRenderer>().sprite = egg2;
-            GameManager.game.LoadNext();
         }
+    }
+
+    IEnumerator WinWait() {
+        yield return new WaitForSeconds(1);
+        GameManager.game.LoadNext();
     }
 }
