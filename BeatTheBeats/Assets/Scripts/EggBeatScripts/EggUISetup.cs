@@ -1,17 +1,13 @@
 using UnityEngine;
-using TMPro;
-public class ClickToStart : MonoBehaviour
+
+public class EggUISetup : MonoBehaviour
 {
-
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
-    }
-
-    void OnMouseDown() {
-        GameManager.game.LoadNext();
+        UIClass.canvas.GetComponent<Canvas>().worldCamera = Camera.main;
+        UIClass.canvas.Restart();
+        UIClass.canvas.UnpauseTimer();
     }
 
     // Update is called once per frame

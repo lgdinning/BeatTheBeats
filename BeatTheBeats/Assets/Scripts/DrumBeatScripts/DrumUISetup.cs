@@ -1,17 +1,14 @@
 using UnityEngine;
-using TMPro;
-public class ClickToStart : MonoBehaviour
+
+public class DrumUISetup : MonoBehaviour
 {
-
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
-    }
+        UIClass.canvas.GetComponent<Canvas>().worldCamera = Camera.main;
+        UIClass.canvas.Restart();
+        UIClass.canvas.UnpauseTimer();
 
-    void OnMouseDown() {
-        GameManager.game.LoadNext();
     }
 
     // Update is called once per frame
