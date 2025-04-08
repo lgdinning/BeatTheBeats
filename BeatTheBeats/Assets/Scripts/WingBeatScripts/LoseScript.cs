@@ -1,17 +1,18 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LoseScript : MonoBehaviour
 {
     public string gameOverTag = "GameOver";
     private float masterTimer = 0;
-    private float gameComplete = 20f;
+    private float gameComplete = 7f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == gameOverTag)
         {
-            Debug.Log("game over yeet");
+            SceneManager.LoadScene("LossScreen");
         }
     }
     void Start()
@@ -25,7 +26,7 @@ public class LoseScript : MonoBehaviour
         masterTimer += Time.deltaTime;
         if (masterTimer >= gameComplete)
             {
-                Debug.Log("game over yeet !!! slayed");
+                GameManager.game.LoadNext();
             }
     }
 }

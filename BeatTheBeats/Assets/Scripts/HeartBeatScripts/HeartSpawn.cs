@@ -28,7 +28,7 @@ public class HeartSpawn : MonoBehaviour
     }
 
     IEnumerator WaitToSpawn() {
-        float waitTime = Random.Range(0.5f, 2f);
+        float waitTime = Random.Range(0.2f, 1f);
         yield return new WaitForSeconds(waitTime);
         shouldSpawn = true;
     }

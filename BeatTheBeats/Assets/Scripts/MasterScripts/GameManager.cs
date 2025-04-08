@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     
     void Awake() {
         game = this;
-        sceneList = new List<string>() {"EggBeat", "DrumBeat", "HeartBeat"};
+        sceneList = new List<string>() {"EggBeat", "DrumBeat", "HeartBeat", "WingBeat"};
         score = 0;
     }
 
