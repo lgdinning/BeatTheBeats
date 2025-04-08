@@ -11,12 +11,12 @@ public class LoseScript : MonoBehaviour
         Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == gameOverTag)
         {
-            Debug.Log("game over bietch");
+            Debug.Log("game over yeet");
         }
     }
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class LoseScript : MonoBehaviour
         masterTimer += Time.deltaTime;
         if (masterTimer >= gameComplete)
             {
-                Debug.Log("game over bietch !!! slayed");
+                Debug.Log("game over yeet !!! slayed");
             }
     }
 }
