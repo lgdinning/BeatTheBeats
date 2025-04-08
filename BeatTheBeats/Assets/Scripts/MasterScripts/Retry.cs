@@ -1,11 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Lose : MonoBehaviour
+public class Retry : MonoBehaviour
 {
-
-    void OnTriggerEnter(Collider other) {
-        SceneManager.LoadScene("LossScreen");
+    void OnMouseDown() {
+        GameManager.game.LoadNext();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

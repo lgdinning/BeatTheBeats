@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WingBeat.unity
     guid: e50dd15c4cdf5f34e8983afd0c40f5d0
+  - enabled: 1
+    path: Assets/Scenes/LossScreen.unity
+    guid: 3cf309bc7b03ef241aba6aab2de7b3a7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0
