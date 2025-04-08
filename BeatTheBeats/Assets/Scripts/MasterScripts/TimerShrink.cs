@@ -21,7 +21,7 @@ public class TimerShrink : MonoBehaviour
     void Start()
     {
         maxHeight = 400f;
-        difficultyModifier = 1.0f;
+        difficultyModifier = 1.0f + (((float)GameManager.game.score)/10);
         paused = true;
         visual.GetComponent<SpriteRenderer>().enabled = false;
         //Debug.Log(gameObject.transform.position);
@@ -30,7 +30,9 @@ public class TimerShrink : MonoBehaviour
     public void Restart() {
         gameObject.transform.localScale = new Vector3(50f, 400f, 1f);
         gameObject.transform.position = anchor.transform.position;
+        difficultyModifier = 1.0f + (((float)GameManager.game.score)/10);
         visual.GetComponent<SpriteRenderer>().enabled = true;
+
         //Debug.Log()
     }
 

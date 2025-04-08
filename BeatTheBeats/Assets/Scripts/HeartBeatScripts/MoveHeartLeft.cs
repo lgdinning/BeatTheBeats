@@ -17,13 +17,14 @@ public class MoveHeartLeft : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        difficultyModifier = 2;
+        difficultyModifier = 1f + (((float)GameManager.game.score)/20);
+        Debug.Log(difficultyModifier);
     }
 
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.position -= new Vector3(difficultyModifier * Time.deltaTime * 5, 0, 0);
+        gameObject.transform.position -= new Vector3(difficultyModifier * Time.deltaTime * 10, 0, 0);
         if (hitHeart.GetComponent<HitHeart>().numToGo <= 0) {
             Destroy(gameObject);
         }

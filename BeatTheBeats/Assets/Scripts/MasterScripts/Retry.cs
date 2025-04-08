@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
 public class Retry : MonoBehaviour
 {
     void OnMouseDown() {
+        GameManager.game.score = 0;
+        GameManager.game.scoreCounter.enabled = true;
+        GameManager.game.finalScore.enabled = false;
         GameManager.game.LoadNext();
     }
 

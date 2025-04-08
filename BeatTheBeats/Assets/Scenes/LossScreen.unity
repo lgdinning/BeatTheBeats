@@ -545,7 +545,7 @@ Transform:
   m_GameObject: {fileID: 1097433966}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.01, y: 1, z: 7.3583035}
+  m_LocalPosition: {x: -4.95, y: 0.47, z: 7.3583035}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -564,6 +564,7 @@ GameObject:
   - component: {fileID: 1627324319}
   - component: {fileID: 1627324318}
   - component: {fileID: 1627324322}
+  - component: {fileID: 1627324323}
   m_Layer: 0
   m_Name: ButtonHitbox
   m_TagString: Untagged
@@ -671,6 +672,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 941ddb5f048cccf40be7ddabebb28881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1627324323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627324317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4991c039e3dea484888ab5f76bb2bad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
