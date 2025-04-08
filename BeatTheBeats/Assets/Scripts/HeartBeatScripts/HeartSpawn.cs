@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class HeartSpawn : MonoBehaviour
 {
     public GameObject hitHeart;
+    public GameObject hitBubble;
     public GameObject heart;
     public GameObject spawnAnchor;
     public bool shouldSpawn;
@@ -21,6 +22,7 @@ public class HeartSpawn : MonoBehaviour
             shouldSpawn = false;
             GameObject newHeart = Instantiate(heart, spawnAnchor.transform.position, Quaternion.identity);
             newHeart.GetComponent<MoveHeartLeft>().hitHeart = hitHeart;
+            newHeart.GetComponent<MoveHeartLeft>().hitBubble = hitBubble;
             StartCoroutine(WaitToSpawn());
         }
     }

@@ -5,13 +5,17 @@ using System.Collections.Generic;
 
 public class TimerShrink : MonoBehaviour
 {
-
+    public static TimerShrink globalTimer;
     public float maxTime;
     public float maxHeight;
     public float difficultyModifier;
     public bool paused;
     public GameObject anchor;
     public GameObject visual;
+
+    void Awake() {
+        globalTimer = this;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -42,6 +46,8 @@ public class TimerShrink : MonoBehaviour
             gameObject.transform.position -= new Vector3(0,difficultyModifier * Time.deltaTime * 0.001f * maxHeight,0);
         } else if (gameObject.transform.localScale.y <= 0) {
             SceneManager.LoadScene("LossScreen");
+            Restart();
+            paused = true;
         }
     }
 }

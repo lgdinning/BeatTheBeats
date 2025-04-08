@@ -33,6 +33,7 @@ public class ScoreManager : MonoBehaviour
         Debug.Log(halfSpins);
         if (halfSpins < 0) {
             eggObject.GetComponent<SpriteRenderer>().sprite = egg3;
+            TimerShrink.globalTimer.paused = true;
             StartCoroutine(WinWait());
         }
         else if (halfSpins < totalSpins / 2) {

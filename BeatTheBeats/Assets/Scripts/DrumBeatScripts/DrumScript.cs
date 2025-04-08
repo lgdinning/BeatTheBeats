@@ -20,11 +20,12 @@ public class DrumScript : MonoBehaviour
         {
             drumHitCount++;
             spriteRenderer.sprite = drumHit;
-            Debug.Log("E pressed! Total count: " + drumHitCount);
+            //Debug.Log("E pressed! Total count: " + drumHitCount);
             if (drumHitCount >= clearHitCount)
             {
+                TimerShrink.globalTimer.paused = true;
                 GameManager.game.LoadNext();
-                Debug.Log("LIMMIT REACHED!!! " + drumHitCount);
+                //Debug.Log("LIMMIT REACHED!!! " + drumHitCount);
             }
         }
         // E not pressed anymore

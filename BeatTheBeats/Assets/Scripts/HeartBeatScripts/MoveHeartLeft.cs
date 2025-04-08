@@ -4,6 +4,11 @@ public class MoveHeartLeft : MonoBehaviour
 {
     public GameObject hitHeart;
     public float difficultyModifier;
+    public GameObject hitBubble;
+
+    // void OnDestroy() {
+    //     Instantiate(hitBubble, transform.position, Quaternion.identity);
+    // }
 
     public void SetDifficulty(float mod) {
         difficultyModifier = mod;
