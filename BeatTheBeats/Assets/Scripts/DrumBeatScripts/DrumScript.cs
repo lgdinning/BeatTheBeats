@@ -15,8 +15,8 @@ public class DrumScript : MonoBehaviour
 
     void Update()
     {
-        // E pressed
-        if (Input.GetKeyDown(KeyCode.E))
+        // space pressed
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             drumHitCount++;
             spriteRenderer.sprite = drumHit;
@@ -28,8 +28,8 @@ public class DrumScript : MonoBehaviour
                 //Debug.Log("LIMMIT REACHED!!! " + drumHitCount);
             }
         }
-        // E not pressed anymore
-        else if (Input.GetKeyUp(KeyCode.E))
+        // space not pressed anymore
+        else if (Input.GetKeyUp(KeyCode.Space))
         {
             spriteRenderer.sprite = drumNotHit;
         }
