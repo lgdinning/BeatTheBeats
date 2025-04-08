@@ -35,7 +35,7 @@ public class TimerShrink : MonoBehaviour
     {
         if (gameObject.transform.localScale.y > 0 && !paused) {
             gameObject.transform.localScale -= new Vector3(0,difficultyModifier * Time.deltaTime * 0.1f * maxHeight,0);
-            gameObject.transform.position -= new Vector3(0,difficultyModifier * Time.deltaTime * 0.01f * 40f,0);
+            gameObject.transform.position -= new Vector3(0,difficultyModifier * Time.deltaTime * 0.001f * maxHeight,0);
         } else if (gameObject.transform.localScale.y <= 0) {
             Debug.Log("You lose!");
         }
