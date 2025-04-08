@@ -14,6 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EggBeat.unity
     guid: 53178b276b65cb847830362000fe2ca6
+  - enabled: 1
+    path: Assets/Scenes/HeartBeat.unity
+    guid: e01a1b5b446eb4640bc7452bbe273986
+  - enabled: 1
+    path: Assets/Scenes/WingBeat.unity
+    guid: e50dd15c4cdf5f34e8983afd0c40f5d0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0

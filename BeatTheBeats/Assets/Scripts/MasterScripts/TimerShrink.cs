@@ -5,11 +5,13 @@ using System.Collections.Generic;
 
 public class TimerShrink : MonoBehaviour
 {
+
     public float maxTime;
     public float maxHeight;
     public float difficultyModifier;
     public bool paused;
     public GameObject anchor;
+    public GameObject visual;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,12 +19,14 @@ public class TimerShrink : MonoBehaviour
         maxHeight = 400f;
         difficultyModifier = 1.0f;
         paused = true;
-        Debug.Log(gameObject.transform.position);
+        visual.GetComponent<SpriteRenderer>().enabled = false;
+        //Debug.Log(gameObject.transform.position);
     }
 
     public void Restart() {
         gameObject.transform.localScale = new Vector3(50f, 400f, 1f);
         gameObject.transform.position = anchor.transform.position;
+        visual.GetComponent<SpriteRenderer>().enabled = true;
         //Debug.Log()
     }
 

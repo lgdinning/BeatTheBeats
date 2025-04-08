@@ -5,13 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public int score;
     public static GameManager game;
     public List<string> sceneList;
     
     void Awake() {
         game = this;
-        sceneList = new List<string>() {"EggBeat", "DrumBeat"};
-        
+        sceneList = new List<string>() {"EggBeat", "DrumBeat", "HeartBeat"};
+        score = 0;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadNext() {
         int randomChoice = Random.Range(0,sceneList.Count);
+        score += 1;
         SceneManager.LoadScene(sceneList[randomChoice]);
     }
 

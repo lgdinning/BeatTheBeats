@@ -45,6 +45,7 @@ public class HitHeart : MonoBehaviour
 
     IEnumerator Win() {
         yield return new WaitForSeconds(1f);
+        GameManager.game.LoadNext();
     }
 
     IEnumerator MissCooldown() {
