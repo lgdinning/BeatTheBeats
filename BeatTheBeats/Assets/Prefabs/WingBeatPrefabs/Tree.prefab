@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5743039591738432216}
   m_Layer: 0
   m_Name: Bottom Tree
-  m_TagString: Untagged
+  m_TagString: GameOver
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,7 +122,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.01533556, y: 0.03679031}
+  m_Offset: {x: -0.01533556, y: 0.06651759}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -132,7 +132,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.1895378, y: 3.6577196}
+  m_Size: {x: 1.1895378, y: 3.5982652}
   m_EdgeRadius: 0
 --- !u!1 &8257063139384858413
 GameObject:
@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 5059482008987145206}
   m_Layer: 0
   m_Name: Top Tree
-  m_TagString: Untagged
+  m_TagString: GameOver
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -303,7 +303,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.01533556, y: 0.03679031}
+  m_Offset: {x: -0.01533556, y: 0.07026762}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -313,5 +313,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.1895378, y: 3.6577196}
+  m_Size: {x: 1.1895378, y: 3.590765}
   m_EdgeRadius: 0
