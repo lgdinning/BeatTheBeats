@@ -3,7 +3,7 @@ using UnityEngine;
 public class BirdMoveScript : MonoBehaviour
 {
     public Rigidbody2D myRigidbody;
-    public float wingBeatPower = 8;
+    public float wingBeatPower = 6;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
