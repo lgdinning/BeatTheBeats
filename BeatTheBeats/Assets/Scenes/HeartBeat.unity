@@ -620,9 +620,9 @@ MonoBehaviour:
   girl: {fileID: 1210185401}
   boy: {fileID: 1101987816}
   offCD: 0
-  girlMad: {fileID: 21300000, guid: 456a34aa8fd13874d91d8a6e6cef8a38, type: 3}
+  girlMad: {fileID: 21300000, guid: c94ad376aacc17f47814c495375a45cd, type: 3}
   girlNeutral: {fileID: 21300000, guid: 816fb16ed8792b44c8231f89422ae6c0, type: 3}
-  girlHappy: {fileID: 21300000, guid: 746f4d8ad5fd41644baf9fd5813a8a82, type: 3}
+  girlHappy: {fileID: 21300000, guid: a530539f8d3bd044780220d501de529d, type: 3}
   boySad: {fileID: 21300000, guid: 91811e479a868d94ea854dbad8aa1d2d, type: 3}
   boyHappy: {fileID: 21300000, guid: e1145850c41715542a08fb3d0cc55077, type: 3}
 --- !u!1 &1101987816
@@ -1241,7 +1241,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.27, y: -0.7, z: -4.204504}
-  m_LocalScale: {x: 15, y: 1, z: 1}
+  m_LocalScale: {x: 15, y: 1000, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
