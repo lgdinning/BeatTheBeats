@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     void Awake() {
         game = this;
         sceneList = new List<string>() {"EggBeat", "DrumBeat", "HeartBeat", "WingBeat"};
-        score = 10;
+        score = 0;
         lastGame = "";
         finalScore.enabled = false;
     }
